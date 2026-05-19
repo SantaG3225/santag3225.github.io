@@ -1,8 +1,4 @@
 # 🌐 Proxy.list — cleaned 2026-04-23
-
-
-
-
 # ====================
 # Foreign domain names
 # ====================
@@ -59,6 +55,7 @@ DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,ytimg.com
+DOMAIN-KEYWORD,google
 
 # Gmail / Hotmail
 DOMAIN-SUFFIX,gmail.com
