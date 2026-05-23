@@ -1,16 +1,24 @@
-# 🌐 Proxy.list — cleaned 2026-04-23
-# ====================
+# ✈️ Proxy.list — cleaned 2026-04-23
+# -----------------------
+#====================
 # Foreign domain names
 # ====================
-
+DOMAIN,santag.tech
 DOMAIN-SUFFIX,us
-DOMAIN,jkoch14.me
+
 # -----------------------
-# Telegram / Swiftgram
+# GitHub
 # -----------------------
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+
+# -----------------------
+# Telegram
+# -----------------------
+DOMAIN-SUFFIX,telegram.org,no-resolve
+DOMAIN-SUFFIX,t.me,no-resolve
+DOMAIN-SUFFIX,telegram.me,no-resolve
 IP-ASN,44907,no-resolve
 IP-ASN,62014,no-resolve
 IP-ASN,59930,no-resolve
@@ -28,12 +36,23 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,auth0.com
+DOMAIN-KEYWORD,chatgpt
+
 
 # -----------------------
 # Perplexity Ai
 # -----------------------
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexitylabs.com
+
+# -----------------------
+# Spotify
+# -----------------------
+DOMAIN-KEYWORD,spotify
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
 
 
 # -----------------------
@@ -44,10 +63,10 @@ DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,pypl.com
 
+
 # -----------------------
 # Google
 # -----------------------
-DOMAIN-SUFFIX,google
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
@@ -55,36 +74,11 @@ DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,ytimg.com
-DOMAIN-KEYWORD,www.google
+DOMAIN-KEYWORD,google
 
 # Gmail / Hotmail
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,hotmail.com
-
-# Gemini
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,gemini.googleapis.com
-
-# Gemini AI
-DOMAIN-SUFFIX,ai.google
-DOMAIN-SUFFIX,genai.google
-DOMAIN-SUFFIX,genai.googleapis.com
-
-# Gemini Cloud
-DOMAIN-SUFFIX,cloud.google.com
-DOMAIN-SUFFIX,console.cloud.google.com
-DOMAIN-SUFFIX,developers.google.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,firebase.google.com
-
-# Gemini AI
-DOMAIN-SUFFIX,storage.googleapis.com
-DOMAIN-SUFFIX,clients1.google.com
-DOMAIN-SUFFIX,clients2.google.com
-DOMAIN-SUFFIX,clients3.google.com
-DOMAIN-SUFFIX,clients4.google.com
-DOMAIN-SUFFIX,clients5.google.com
-DOMAIN-SUFFIX,clients6.google.com
 
 # Gemini
 DOMAIN-SUFFIX,google-analytics.com
@@ -102,28 +96,5 @@ DOMAIN-SUFFIX,dropbox.com
 
 # truecaller 
 DOMAIN-SUFFIX,truecaller.com
-
-
-# Amazon
-DOMAIN-KEYWORD,amazon
-DOMAIN-SUFFIX,amazon.co.jp
-DOMAIN-SUFFIX,amazon.com
-DOMAIN-SUFFIX,amazonaws.com
-IP-CIDR,13.32.0.0/15,no-resolve
-IP-CIDR,13.35.0.0/17,no-resolve
-IP-CIDR,18.184.0.0/15,no-resolve
-IP-CIDR,18.194.0.0/15,no-resolve
-IP-CIDR,18.208.0.0/13,no-resolve
-IP-CIDR,18.232.0.0/14,no-resolve
-IP-CIDR,52.58.0.0/15,no-resolve
-IP-CIDR,52.74.0.0/16,no-resolve
-IP-CIDR,52.77.0.0/16,no-resolve
-IP-CIDR,52.84.0.0/15,no-resolve
-IP-CIDR,52.200.0.0/13,no-resolve
-IP-CIDR,54.93.0.0/16,no-resolve
-IP-CIDR,54.156.0.0/14,no-resolve
-IP-CIDR,54.226.0.0/15,no-resolve
-IP-CIDR,54.230.156.0/22,no-resolve
-
 
 ##==============================
