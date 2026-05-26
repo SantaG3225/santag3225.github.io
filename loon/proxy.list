@@ -29,17 +29,6 @@ IP-CIDR,109.239.140.0/24,no-resolve
 # TODO: verify swiftgram.pro owner
 
 # -----------------------
-# OpenAI / ChatGPT
-# -----------------------
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-KEYWORD,chatgpt
-
-
-# -----------------------
 # Perplexity Ai
 # -----------------------
 DOMAIN-SUFFIX,perplexity.ai
