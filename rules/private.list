@@ -1,0 +1,72 @@
+# NAME: private
+# AUTHOR: Ai intelligent assistant
+# UPDATED: 2026-05-31
+# PURPOSE: Surge 5 iOS rule set for private, local, and reserved networks that should use DIRECT.
+#
+# Usage in Surge profile:
+#   [Rule]
+#   RULE-SET,private.list,DIRECT
+#   RULE-SET,china-direct.list,DIRECT
+#   GEOIP,CN,DIRECT
+#   FINAL,PROXY
+#
+# Notes:
+# - This is a rule-set file, so rules below do not include a policy name.
+# - Place this rule set near the top of [Rule] so local devices and LAN services bypass proxy first.
+
+# --- Localhost ---
+DOMAIN,localhost
+DOMAIN-SUFFIX,localhost
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR6,::1/128,no-resolve
+
+# --- Private IPv4 ranges ---
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+
+# --- Link-local / auto-configuration ---
+IP-CIDR,169.254.0.0/16,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
+
+# --- Carrier-grade NAT / shared address space ---
+IP-CIDR,100.64.0.0/10,no-resolve
+
+# --- IPv6 unique local address ---
+IP-CIDR6,fc00::/7,no-resolve
+
+# --- Multicast / broadcast / reserved local discovery ---
+IP-CIDR,224.0.0.0/4,no-resolve
+IP-CIDR,255.255.255.255/32,no-resolve
+IP-CIDR6,ff00::/8,no-resolve
+
+# --- Common local discovery domains ---
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,home.arpa
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,localdomain
+DOMAIN-SUFFIX,internal
+DOMAIN-SUFFIX,intranet
+
+# --- Router / gateway aliases ---
+DOMAIN,router.asus.com
+DOMAIN-SUFFIX,router.asus.com
+DOMAIN,miwifi.com
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN,tplinkwifi.net
+DOMAIN-SUFFIX,tplinkwifi.net
+DOMAIN,tplogin.cn
+DOMAIN-SUFFIX,tplogin.cn
+DOMAIN,melogin.cn
+DOMAIN-SUFFIX,melogin.cn
+DOMAIN,falogin.cn
+DOMAIN-SUFFIX,falogin.cn
+
+# --- Captive portal / connectivity checks commonly better direct ---
+DOMAIN,captive.apple.com
+DOMAIN,connectivitycheck.gstatic.com
+DOMAIN,connectivitycheck.android.com
+DOMAIN,detectportal.firefox.com
+DOMAIN,www.msftconnecttest.com
+DOMAIN,www.msftncsi.com
+
