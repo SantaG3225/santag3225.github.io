@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SantaG Surge Rules</title>
+  <meta name="description" content="Personal Surge rule sets for iOS, optimized for Malaysia users with a U.S. proxy node.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #dbe2ea;
+      --accent: #2563eb;
+      --code-bg: #111827;
+      --code-text: #e5e7eb;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --line: #243244;
+        --accent: #60a5fa;
+        --code-bg: #020617;
+        --code-text: #e5e7eb;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 42px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 36px 0 12px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 18px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow-wrap: anywhere;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.94em;
+    }
+
+    pre {
+      margin: 14px 0 0;
+      padding: 16px;
+      color: var(--code-text);
+      background: var(--code-bg);
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      margin-right: 8px;
+    }
+
+    footer {
+      margin-top: 42px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 24px, 960px);
+        padding: 36px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .panel {
+        padding: 14px;
+      }
+
+      th,
+      td {
+        padding: 10px 6px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">Surge 5 iOS</span>
+      <span class="badge">Rule Sets</span>
+      <h1>SantaG Surge Rules</h1>
+      <p>Personal Surge rule sets for iOS, optimized for a Malaysia-based setup with a U.S. proxy node.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="rule-sets">
+      <h2 id="rule-sets">Rule Sets</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Purpose</th>
+            <th>Suggested Policy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="/rules/ai.list"><code>ai.list</code></a></td>
+            <td>AI services and related domains.</td>
+            <td><code>Proxy</code></td>
+          </tr>
+          <tr>
+            <td><a href="/rules/global.list"><code>global.list</code></a></td>
+            <td>Global services, developer tools, Google, YouTube, GitHub, and selected media platforms.</td>
+            <td><code>Proxy</code></td>
+          </tr>
+          <tr>
+            <td><a href="/rules/china-direct.list"><code>china-direct.list</code></a></td>
+            <td>China mainland domains and services.</td>
+            <td><code>DIRECT</code></td>
+          </tr>
+          <tr>
+            <td><a href="/rules/edu.list"><code>edu.list</code></a></td>
+            <td>Education websites, school portals, SSO, Microsoft login, Canvas, and MFA services.</td>
+            <td><code>Proxy</code></td>
+          </tr>
+          <tr>
+            <td><a href="/rules/private.list"><code>private.list</code></a></td>
+            <td>Private or custom rules.</td>
+            <td>Depends on setup</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel" aria-labelledby="surge-config">
+      <h2 id="surge-config">Surge Configuration</h2>
+      <p>Use these remote rule-set URLs in the <code>[Rule]</code> section of your Surge profile.</p>
+      <pre><code>[Rule]
+RULE-SET,https://santag3225.github.io/rules/edu.list,Proxy
+RULE-SET,https://santag3225.github.io/rules/ai.list,Proxy
+RULE-SET,https://santag3225.github.io/rules/global.list,Proxy
+RULE-SET,https://santag3225.github.io/rules/china-direct.list,DIRECT
+GEOIP,CN,DIRECT
+FINAL,DIRECT</code></pre>
+    </section>
+
+    <section class="panel" aria-labelledby="routing-logic">
+      <h2 id="routing-logic">Recommended Routing Logic</h2>
+      <pre><code>Education / AI / GitHub / Google / YouTube -> U.S. proxy
+China mainland services                  -> DIRECT
+Malaysia local services                  -> DIRECT
+Unknown traffic                          -> DIRECT</code></pre>
+      <p>This setup does not provide a China mainland return route. Services that require a China mainland IP still need a China mainland or return-home proxy node.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="format">
+      <h2 id="format">Rule Format</h2>
+      <p>Each <code>.list</code> file contains Surge-compatible rules without policy names.</p>
+      <pre><code># Comment
+DOMAIN-SUFFIX,example.com
+DOMAIN,login.example.com
+DOMAIN-KEYWORD,example
+IP-CIDR,1.1.1.0/24</code></pre>
+    </section>
+
+    <section class="panel" aria-labelledby="validation">
+      <h2 id="validation">Validation</h2>
+      <p>GitHub Actions validates the rule files automatically.</p>
+      <ul>
+        <li>Unsupported rule types</li>
+        <li>Missing rule values</li>
+        <li>Duplicate rules inside the same file</li>
+        <li>Invalid domain values</li>
+        <li>CRLF line endings or missing final newline</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Provided for personal routing and learning purposes. Follow local laws, platform terms, and network policies.</p>
+    </footer>
+  </main>
+</body>
+</html>
