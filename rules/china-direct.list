@@ -15,7 +15,6 @@
 
 # --- China TLD / IDN ---
 DOMAIN-SUFFIX,cn
-DOMAIN-SUFFIX,中国
 DOMAIN-SUFFIX,中國
 DOMAIN-SUFFIX,xn--fiqs8s
 DOMAIN-SUFFIX,xn--fiqz9s
