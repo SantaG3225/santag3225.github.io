@@ -3,16 +3,6 @@
 # FORMAT: Surge Rule Set
 # USAGE: RULE-SET,https://your-domain/global.list,Proxy
 
-# AI / OpenAI
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,sentry.io
-
 # Google
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
