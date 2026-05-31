@@ -1,0 +1,74 @@
+# NAME: Education Login List for Surge 5 iOS
+# UPDATED: 2026-05-31
+# FORMAT: Surge Rule Set
+# USAGE: RULE-SET,https://your-domain/edu.list,Proxy
+
+# California State University, Northridge (CSUN)
+DOMAIN-SUFFIX,csun.edu
+DOMAIN,portal.csun.edu
+DOMAIN,my.csun.edu
+DOMAIN,www.csun.edu
+DOMAIN-SUFFIX,csun.instructure.com
+DOMAIN-SUFFIX,csun.zoom.us
+
+# Joliet Junior College (JJC)
+DOMAIN-SUFFIX,jjc.edu
+DOMAIN,my.jjc.edu
+DOMAIN,help.jjc.edu
+DOMAIN,sta525.jjc.edu
+DOMAIN-SUFFIX,icampus.instructure.com
+DOMAIN-SUFFIX,jjc.instructure.com
+DOMAIN-SUFFIX,icampus.zendesk.com
+
+# Spokane Community College / Spokane Colleges / Community Colleges of Spokane
+DOMAIN-SUFFIX,spokane.edu
+DOMAIN-SUFFIX,scc.spokane.edu
+DOMAIN-SUFFIX,sfcc.spokane.edu
+DOMAIN-SUFFIX,ccs.spokane.edu
+DOMAIN-SUFFIX,ctclink.spokane.edu
+DOMAIN-SUFFIX,apps.spokane.edu
+DOMAIN-SUFFIX,internal.spokane.edu
+DOMAIN-SUFFIX,intranet.sfcc.spokane.edu
+DOMAIN-SUFFIX,itsupport.spokane.edu
+DOMAIN-SUFFIX,ccsnet.ccs.spokane.edu
+DOMAIN-SUFFIX,ccs.spokane.cc.wa.us
+DOMAIN-SUFFIX,ccs.instructure.com
+DOMAIN-SUFFIX,ccspokane.freshservice.com
+DOMAIN-SUFFIX,ccsfoundation.org
+DOMAIN-SUFFIX,catalog.spokane.edu
+DOMAIN-SUFFIX,spokanecolleges.t2hosted.com
+DOMAIN-SUFFIX,spokanecc-csm.symplicity.com
+DOMAIN-SUFFIX,communitycollegesofspokane.sharepoint.com
+
+# Washington ctcLink / PeopleSoft Login
+DOMAIN-SUFFIX,ctclink.us
+DOMAIN,csprd.ctclink.us
+DOMAIN,ptprdguest.ctclink.us
+DOMAIN,myaccount.ctclink.us
+
+# School SSO / Microsoft 365 Login
+DOMAIN,login.microsoftonline.com
+DOMAIN,login.live.com
+DOMAIN,portal.office.com
+DOMAIN,www.office.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,m365.cloud.microsoft
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msauthimages.net
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msftauthimages.net
+
+# MFA / Identity Providers Commonly Used by Schools
+DOMAIN-SUFFIX,duosecurity.com
+DOMAIN-SUFFIX,okta.com
+DOMAIN-SUFFIX,onelogin.com
+
+# Learning / Testing Platforms Common in School Login Flows
+DOMAIN-SUFFIX,instructure.com
+DOMAIN-SUFFIX,canvaslms.com
+DOMAIN-SUFFIX,respondus.com
+DOMAIN-SUFFIX,panopto.com
+DOMAIN-SUFFIX,collegenet.com
+DOMAIN-SUFFIX,qualtrics.com
