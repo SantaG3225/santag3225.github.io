@@ -1,0 +1,74 @@
+# NAME: unbreak
+# AUTHOR: Ai intelligent assistant
+# UPDATED: 2026-05-31
+# DESCRIPTION: Minimal Surge iOS unbreak ruleset for overseas users. Use with DIRECT before reject/rewrite-heavy rules.
+
+# Apple captive portal / setup / Siri / system helpers not always covered by content rules
+DOMAIN,captive.apple.com
+DOMAIN,configuration.apple.com
+DOMAIN,guzzoni.apple.com
+DOMAIN,smp-device-content.apple.com
+DOMAIN,xp.apple.com
+DOMAIN,api.smoot.apple.com
+
+# Apple push / iCloud helper / software update
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,push-apple.com.akadns.net
+DOMAIN-SUFFIX,ess.apple.com
+DOMAIN-SUFFIX,gdmf.apple.com
+DOMAIN-SUFFIX,lcdn-locator.apple.com
+DOMAIN-SUFFIX,lcdn-registration.apple.com
+DOMAIN-SUFFIX,ls.apple.com
+DOMAIN,mesu.apple.com
+DOMAIN,swscan.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,swdist.apple.com
+DOMAIN,updates.cdn-apple.com
+
+# App Store / iTunes bootstrap and Apple static assets
+DOMAIN,init.itunes.apple.com
+DOMAIN,aod.itunes.apple.com
+DOMAIN,mvod.itunes.apple.com
+DOMAIN,streamingaudio.itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,aaplimg.com
+
+# Certificate validation / revocation checks
+DOMAIN-SUFFIX,ocsp.apple.com
+DOMAIN-SUFFIX,ocsp2.apple.com
+DOMAIN-SUFFIX,ocsp.digicert.com
+DOMAIN-SUFFIX,crl3.digicert.com
+DOMAIN-SUFFIX,crl4.digicert.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,letsencrypt.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,globalsign.com
+DOMAIN-SUFFIX,sectigo.com
+
+# Time sync
+DOMAIN,time.apple.com
+DOMAIN,time.google.com
+DOMAIN,time.windows.com
+DOMAIN,time.cloudflare.com
+DOMAIN-SUFFIX,pool.ntp.org
+
+# Captive portal / connectivity checks
+DOMAIN,connectivitycheck.gstatic.com
+DOMAIN,clients3.google.com
+DOMAIN,detectportal.firefox.com
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
+
+# Human verification / login challenge assets
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,funcaptcha.com
+
+# Payment verification assets, especially 3-D Secure flows
+DOMAIN-SUFFIX,3dsecure.io
+DOMAIN-SUFFIX,visacdn.com
+DOMAIN-SUFFIX,mastercardservices.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,stripecdn.com
