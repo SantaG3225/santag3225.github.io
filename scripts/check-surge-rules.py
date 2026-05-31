@@ -23,12 +23,13 @@ ALLOWED_RULES = {
 DOMAIN_RE = re.compile(r"^[A-Za-z0-9*_.-]+$")
 
 errors = []
-seen = set()
 
 def add_error(path, line_no, message):
     errors.append(f"{path}:{line_no}: {message}")
 
 def validate_file(path: Path):
+    seen = set()
+    
     content = path.read_bytes()
 
     if b"\r\n" in content:
