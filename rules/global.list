@@ -1,0 +1,157 @@
+# NAME: Global Proxy List for Surge 5 iOS
+# UPDATED: 2026-05-31
+# FORMAT: Surge Rule Set
+# USAGE: RULE-SET,https://your-domain/global.list,Proxy
+
+# AI / OpenAI
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,sentry.io
+
+# Google
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,youtubei.googleapis.com
+DOMAIN-SUFFIX,withyoutube.com
+DOMAIN-SUFFIX,blogger.com
+DOMAIN-SUFFIX,blogspot.com
+DOMAIN-SUFFIX,googleblog.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googletagservices.com
+
+# GitHub / Developer
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,bitbucket.org
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,stackexchange.com
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,npmjs.com.cn
+DOMAIN-SUFFIX,pypi.org
+DOMAIN-SUFFIX,pythonhosted.org
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,dockerhub.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,netlify.app
+DOMAIN-SUFFIX,herokuapp.com
+
+# Microsoft / Productivity
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,vscode.dev
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,windows.net
+
+# Apple Global Services
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,mzstatic.com
+
+# Social / Media
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,redditmedia.com
+DOMAIN-SUFFIX,redditstatic.com
+DOMAIN-SUFFIX,pinterest.com
+DOMAIN-SUFFIX,pinimg.com
+
+# Streaming / Entertainment
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,disneyplus.com
+DOMAIN-SUFFIX,disney-plus.net
+DOMAIN-SUFFIX,disney.com
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,primevideo.com
+DOMAIN-SUFFIX,amazonvideo.com
+DOMAIN-SUFFIX,twitch.tv
+DOMAIN-SUFFIX,twitchcdn.net
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,soundcloud.com
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokv.com
+
+# News / Knowledge
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikimedia.org
+DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,notion.site
+DOMAIN-SUFFIX,quora.com
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,bbc.com
+DOMAIN-SUFFIX,bloomberg.com
+DOMAIN-SUFFIX,reuters.com
+
+# Cloud / CDN / Common Global APIs
+DOMAIN-SUFFIX,amazonaws.com
+DOMAIN-SUFFIX,awsstatic.com
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,digitalocean.com
+DOMAIN-SUFFIX,linode.com
+DOMAIN-SUFFIX,vultr.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,paypal.com
+
+# Speedtest / Network Tools
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,fast.com
