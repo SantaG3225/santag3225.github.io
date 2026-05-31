@@ -1,0 +1,239 @@
+# NAME: unbreak
+# AUTHOR: Ai intelligent assistant
+# UPDATED: 2026-05-31
+# DESCRIPTION: Surge iOS unbreak list for overseas users. Put this rule-set before reject/proxy/rewrite-heavy rules and route it to DIRECT.
+
+# ------------------------------
+# Local Network / Private Address
+# ------------------------------
+DOMAIN,localhost
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,home.arpa
+IP-CIDR,0.0.0.0/8,no-resolve
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,169.254.0.0/16,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,224.0.0.0/4,no-resolve
+IP-CIDR,255.255.255.255/32,no-resolve
+IP-CIDR6,::1/128,no-resolve
+IP-CIDR6,fc00::/7,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
+
+# ------------------------------
+# Apple Core Services
+# ------------------------------
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,apple.news
+DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mac.com
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,ess.apple.com
+DOMAIN-SUFFIX,gdmf.apple.com
+DOMAIN-SUFFIX,swcdn.apple.com
+DOMAIN-SUFFIX,swdist.apple.com
+DOMAIN-SUFFIX,swscan.apple.com
+DOMAIN-SUFFIX,updates.cdn-apple.com
+
+# Apple Captive Portal / Network Check
+DOMAIN,captive.apple.com
+DOMAIN,www.apple.com
+DOMAIN,init.itunes.apple.com
+
+# ------------------------------
+# Certificate / OCSP / CRL
+# ------------------------------
+DOMAIN-SUFFIX,ocsp.apple.com
+DOMAIN-SUFFIX,ocsp2.apple.com
+DOMAIN-SUFFIX,ocsp.digicert.com
+DOMAIN-SUFFIX,crl3.digicert.com
+DOMAIN-SUFFIX,crl4.digicert.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,comodoca.com
+DOMAIN-SUFFIX,sectigo.com
+DOMAIN-SUFFIX,letsencrypt.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,globalsign.com
+DOMAIN-SUFFIX,entrust.net
+DOMAIN-SUFFIX,entrust.com
+
+# ------------------------------
+# DNS / Connectivity / Time Sync
+# ------------------------------
+DOMAIN-SUFFIX,dns.google
+DOMAIN-SUFFIX,dns.quad9.net
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,one.one.one.one
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,time.apple.com
+DOMAIN-SUFFIX,time.google.com
+DOMAIN,time.cloudflare.com
+DOMAIN,time.windows.com
+
+# ------------------------------
+# Google Core / Android / Login
+# ------------------------------
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,recaptcha.net
+
+# Google Connectivity Check
+DOMAIN,connectivitycheck.gstatic.com
+DOMAIN,clients3.google.com
+
+# ------------------------------
+# Microsoft / Windows / Office / Xbox Login
+# ------------------------------
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msauthimages.net
+DOMAIN-SUFFIX,msecnd.net
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,azurewebsites.net
+DOMAIN-SUFFIX,xboxlive.com
+DOMAIN-SUFFIX,xbox.com
+
+# ------------------------------
+# Mozilla / Firefox / Browser Checks
+# ------------------------------
+DOMAIN-SUFFIX,mozilla.org
+DOMAIN-SUFFIX,mozilla.com
+DOMAIN-SUFFIX,firefox.com
+DOMAIN,detectportal.firefox.com
+
+# ------------------------------
+# Login / Anti-bot / Identity Providers
+# ------------------------------
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,okta.com
+DOMAIN-SUFFIX,okta-emea.com
+DOMAIN-SUFFIX,onelogin.com
+DOMAIN-SUFFIX,duosecurity.com
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,funcaptcha.com
+
+# ------------------------------
+# Payment / Banking Friendly Baseline
+# ------------------------------
+DOMAIN-SUFFIX,visa.com
+DOMAIN-SUFFIX,visacdn.com
+DOMAIN-SUFFIX,mastercard.com
+DOMAIN-SUFFIX,mastercardservices.com
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripecdn.com
+DOMAIN-SUFFIX,checkout.com
+DOMAIN-SUFFIX,adyen.com
+DOMAIN-SUFFIX,adyenpayments.com
+DOMAIN-SUFFIX,worldpay.com
+DOMAIN-SUFFIX,3dsecure.io
+
+# ------------------------------
+# CDN / Static Assets Often Needed By Apps
+# ------------------------------
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akamai.net
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,edgekey.net
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,fastlylb.net
+DOMAIN-SUFFIX,cdn77.org
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflare.net
+
+# ------------------------------
+# App / Push / Realtime Infrastructure
+# ------------------------------
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,firebaseapp.com
+DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
+DOMAIN-SUFFIX,fcm.googleapis.com
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,onesignal.com
+DOMAIN-SUFFIX,pusher.com
+DOMAIN-SUFFIX,pusherapp.com
+DOMAIN-SUFFIX,sentry.io
+
+# ------------------------------
+# Video / Voice / WebRTC Helpers
+# ------------------------------
+DOMAIN-SUFFIX,twilio.com
+DOMAIN-SUFFIX,twiliocdn.com
+DOMAIN-SUFFIX,agora.io
+DOMAIN-SUFFIX,agora.io.edgekey.net
+DOMAIN-SUFFIX,stunprotocol.org
+DOMAIN,stun.l.google.com
+DOMAIN,stun1.l.google.com
+DOMAIN,stun2.l.google.com
+DOMAIN,stun3.l.google.com
+DOMAIN,stun4.l.google.com
+
+# ------------------------------
+# Common Overseas Essential Services
+# ------------------------------
+DOMAIN-SUFFIX,amazon.com
+DOMAIN-SUFFIX,amazonaws.com
+DOMAIN-SUFFIX,awsstatic.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,bitbucket.org
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,pypi.org
+DOMAIN-SUFFIX,pythonhosted.org
+
+# ------------------------------
+# Social Login / Messaging Basics
+# ------------------------------
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,signal.org
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+
