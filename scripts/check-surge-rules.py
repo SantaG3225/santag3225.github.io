@@ -24,12 +24,20 @@ DOMAIN_RE = re.compile(r"^[A-Za-z0-9*_.-]+$")
 
 errors = []
 
+stats = {
+    "files": 0,
+    "rules": 0,
+    "comments": 0,
+    "blank": 0,
+}
+
 def add_error(path, line_no, message):
     errors.append(f"{path}:{line_no}: {message}")
 
 def validate_file(path: Path):
     seen = set()
-    
+    stats["files"] += 1
+
     content = path.read_bytes()
 
     if b"\r\n" in content:
@@ -43,8 +51,15 @@ def validate_file(path: Path):
     for line_no, raw_line in enumerate(text.splitlines(), start=1):
         line = raw_line.strip()
 
-        if not line or line.startswith("#"):
+        if not line:
+            stats["blank"] += 1
             continue
+
+        if line.startswith("#"):
+            stats["comments"] += 1
+            continue
+
+        stats["rules"] += 1
 
         if " " in line:
             add_error(path, line_no, "rule line should not contain spaces")
@@ -110,7 +125,11 @@ def main():
             print(f"- {error}")
         return 1
 
-    print(f"Surge rule validation passed: {len(files)} file(s) checked.")
+    print("Surge rule validation passed.")
+    print(f"Files checked: {stats['files']}")
+    print(f"Total rules: {stats['rules']}")
+    print(f"Comment lines: {stats['comments']}")
+    print(f"Blank lines: {stats['blank']}")
     return 0
 
 if __name__ == "__main__":
