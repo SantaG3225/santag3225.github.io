@@ -1,6 +1,8 @@
 # SantaG Surge Rules
 <a href="https://www.digitalocean.com/?refcode=eb602945d727&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
-Personal Surge rule sets for iOS, designed for a Malaysia-based setup with a U.S. proxy node.
+
+
+Personal Surge rule sets for iOS, designed for a setup with a U.S. proxy node.
 
 These rule sets are intended to keep China mainland services direct, route selected global services through a proxy, and separate education-related login traffic for easier troubleshooting.
 
